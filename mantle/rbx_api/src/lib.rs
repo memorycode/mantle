@@ -16,7 +16,7 @@ pub mod spatial_voice;
 pub mod thumbnails;
 pub mod user;
 
-use std::sync::Arc;
+use std::{sync::Arc, time::Duration};
 
 use errors::{RobloxApiError, RobloxApiResult};
 use rbx_auth::{RobloxCookieStore, RobloxCsrfTokenStore};
