@@ -37,6 +37,7 @@ impl RobloxApi {
         Ok(Self {
             csrf_token_store,
             client: reqwest::Client::builder()
+                .timeout(Duration::from_secs(8))
                 .connection_verbose(true)
                 .user_agent("Roblox/WinInet")
                 .cookie_provider(cookie_store)
